@@ -9,6 +9,11 @@
 <body>
   <header>
     <nav class="nav-bar">
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="nav-left">
         <a href="#">Buy</a>
         <a href="#">Sell</a>
@@ -27,7 +32,9 @@
 
   <main>
     <section class="img-container">
-        <img src="images\Logo.png" alt="">
+        <img src="images\Logo.png" alt="Login Image">
+        <img src="images\bluebox.png" alt="Login Image" class="upper-bluebox">
+      </section>
     <section class="login-container">
       <div class="login-form">
 
@@ -56,6 +63,10 @@
         <button onclick="alert('Redirect to register')">Register today</button>
       </div>
     </section>
+        <section class="img-container">
+
+        <img src="images\bluebox2.png" alt="Login Image" class="lower-bluebox">
+      </section>
   </main>
 
   <script src="script.js"></script>

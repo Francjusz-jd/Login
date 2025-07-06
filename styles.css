@@ -46,11 +46,29 @@ main {
     align-items: center;
     flex-direction: column;
   padding: 40px 20px;
+  position: relative;
 }
 .img-container {
-  padding: 15px;
   max-width: 800px;
   width: 100%;
+  position: relative;
+  
+}
+
+.upper-bluebox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 18%;
+  
+  margin-right: 3%;
+}
+.lower-bluebox {
+  position: absolute;
+  bottom: 10;
+  right: 0;
+  width: 18%;
+  margin-right: 2%;
 }
 
 
@@ -147,10 +165,7 @@ main {
     width: 100%;
   }
 
-  .img-container img {
-    max-width: 100%;
-    height: auto;
-  }
+  
   .register-side {
     width: 100%;
     text-align: center;
@@ -160,14 +175,55 @@ main {
 @media (max-width: 400px) {
   .nav-bar {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .nav-left,
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #eee;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .nav-left.active,
+  .nav-right.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    align-self: flex-end;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 3px 0;
+    transition: 0.3s;
   }
 
   .nav-bar a {
     margin: 5px 0;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
   }
 
   .breadcrumbs {
     font-size: 12px;
+  }
+  .upper-bluebox {
+    float: right;
+    margin-left: 20px;
   }
 }
