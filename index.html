@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-left">
+        <a href="#">Buy</a>
+        <a href="#">Sell</a>
+        <a href="#">About</a>
+      </div>
+      <div class="nav-right">
+        <a href="#">Register</a>
+        <a class="active" href="#">Login</a>
+      </div>
+    </nav>
+    <div class="breadcrumbs">
+      <a href="#">Home</a> / <span>Login</span>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="img-container">
+        <img src="images\Logo.png" alt="">
+    <section class="login-container">
+      <div class="login-form">
+
+        <form id="loginForm" novalidate>
+          <label>Username</label>
+          <input type="text" id="username" maxlength="100" required />
+          <span class="error" id="usernameError"></span>
+
+          <label>Email Address</label>
+          <input type="email" id="email" required />
+          <span class="error" id="emailError"></span>
+
+          <label>Password</label>
+          <input type="password" id="password" minlength="7" maxlength="25" required />
+          <span class="error" id="passwordError"></span>
+
+          <div class="form-actions">
+            <a href="#">Forgot Password?</a>
+            <button type="submit">Login</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="register-side">
+        <p><strong>Not a member?</strong></p>
+        <button onclick="alert('Redirect to register')">Register today</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

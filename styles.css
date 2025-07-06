@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.nav-bar {
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.nav-bar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.nav-bar .active {
+  background: #999;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.breadcrumbs {
+  margin: 10px 20px;
+  font-size: 14px;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: blue;
+}
+
+main {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  padding: 40px 20px;
+}
+.img-container {
+  padding: 15px;
+  max-width: 800px;
+  width: 100%;
+}
+
+
+.login-container {
+  display: flex;
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  padding: 15px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.login-form {
+    flex: 1;
+    margin-right: 30px;
+    background: #e2e2e2;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.login-form h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.login-form p {
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 10px;  
+  }
+
+
+.form-actions button {
+  background: #555;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.form-actions a {
+  color: rgb(77, 77, 77);
+  text-decoration: none;
+}
+.register-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-side button {
+  background: #555;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .login-container {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .login-form {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .img-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  .register-side {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar a {
+    margin: 5px 0;
+  }
+
+  .breadcrumbs {
+    font-size: 12px;
+  }
+}
