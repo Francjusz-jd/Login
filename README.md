@@ -25,3 +25,4 @@ Projekt został przetestowany i działa poprawnie na:
    ```bash
    git clone https://github.com/Francjusz-jd/Login.git
    cd Login
+2. Otworzyć plik index.html
