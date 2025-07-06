@@ -16,7 +16,6 @@
 Projekt został przetestowany i działa poprawnie na:
 - Chrome (aktualna wersja)
 - Firefox
-- Safari
 - Edge
 
 
